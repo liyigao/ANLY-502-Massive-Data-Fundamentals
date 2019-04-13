@@ -1,0 +1,8 @@
+1. Do you notice anything unusual in the results dataset? If so, what is it?
+
+Yes. In fact, the top 10 output only contains bigrams "in _" and "in the". Some result rows are duplicated. Average numbers of appearance per book for each bigram is approximately 600 and 400. Other duplicate rows show parts of speech of each word in bigrams. Some do but some do not.
+
+2. If you wanted to perform different analytics on the aggregated dataset, how would you approach this?
+
+Pig and Hive can deal with aggregated dataset, but with limited, regular commands. If we want to do more analytics on dataset. MapReduce is a good choice because it can implement Python scripts, which is more flexible to do complicated analysis.
+
